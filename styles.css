@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -15,6 +25,12 @@ header {
     background-color: #333;
     color: white;
     padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+    padding: 5px;
+    font-size: 50px;
 }
 
 nav {
@@ -36,14 +52,24 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a:hover {
+    color: #b58b31; /* ホバー時にリンクの色を変更 */
+    text-decoration: underline; /* ホバー時に下線を表示 */
+    transition: color 0.7s ease, text-decoration 0.7s ease; /* スムーズな変化 */
+}
+
+
 .section {
-    padding: 50px 20px;
+    padding: 30px 20px;
     text-align: center;
     background: #fff;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* 初期状態の透明度 */
+    animation: fade-in 1.5s ease-in-out forwards; /* フェードインアニメーション */
 }
+
 
 .me {
     width: 300px;
@@ -51,7 +77,7 @@ nav ul li a {
 
 h1 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 p, ul {
@@ -70,10 +96,31 @@ footer {
 .basketball_cat {
     width: 300px;
     background: url('https://images.unsplash.com/photo-1560807707-9b1b5e07d9b3') no-repeat center center/cover;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none; /* 最初は非表示 */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
 
 @media (max-width: 768px) {
     nav ul li {
