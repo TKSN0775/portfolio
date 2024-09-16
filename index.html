@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>My Portfolio</h1>
@@ -23,12 +25,16 @@
 
     <section id="about" class="section">
         <h1>自己紹介</h1>
-        <div class="profile-image">
+        <div class="container">
             <img src="me.jpg" alt="プロフィール画像" class="me">
-        <p>こんにちは、竹島駿介です。現在大学4年生で、福井高専から筑波大学に3年次編入しました。<br>
-            高専では、情報技術や電子工学など、ハードウェアからソフトウェアまで幅広く学びました。<br>
-            卒業研究では、量子コンピュータの研究をし、シミュレータの開発を行いました。<br>
-            基礎知識を積み重ねて1つの成果を出すプロセスを学ぶことができたと思います。</p>
+            <p>こんにちは、竹島駿介です。現在大学4年生で、福井高専から筑波大学に3年次編入しました。<br>
+                高専では、情報技術や電子工学など、ハードウェアからソフトウェアまで幅広く学びました。<br>
+                卒業研究では、量子コンピュータの研究をし、シミュレータの開発を行いました。<br>
+                基礎知識を積み重ねて1つの成果を出すプロセスを学ぶことができました。</p>
+
+        </div>
+
+
     </section>
 
     <section id="experience" class="section">
@@ -46,27 +52,44 @@
             集客力あるものを作れるのかを考えるのが大変ではありますが、やりがいを感じています。<br>
             塾のホームページ -> <a href="https://techtune.xsrv.jp" target="_blank">TechTune</a>
         </p>
+        <h2>24時間AIハッカソン</h2>
+        <blockquote class="twitter-tweet">
+            <p lang="ja" dir="ltr">東京24時間AIハッカソン 2024<br>最後にみんなで記念写真です<a
+                    href="https://twitter.com/hashtag/LFS%E6%B1%A0%E8%A2%8B?src=hash&amp;ref_src=twsrc%5Etfw">#LFS池袋</a>
+                での楽しい2日間？苦しい2日間？刺激的な2日間？ま、兎にも角にもありがとうございました😀😀😀<br><br>24時間AIハッカソン Powered by GALLERIA <a
+                    href="https://twitter.com/hashtag/24aihack?src=hash&amp;ref_src=twsrc%5Etfw">#24aihack</a> <a
+                    href="https://t.co/aIbYmoMGLs">pic.twitter.com/aIbYmoMGLs</a></p>&mdash; 24時間AIハッカソン Powered by
+            GALLERIA (@24aihackathon) <a
+                href="https://twitter.com/24aihackathon/status/1835273985820615116?ref_src=twsrc%5Etfw">September 15,
+                2024</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="container">
+            <img src="motionmentor.jpg" alt="MotionMentor" class="motionmentor">
+            <p>東京24時間AIハッカソンに参加し、<br>
+                筋トレAIインストラクターサービス"MotionMentor"を開発しました。<br>
+                <a href="https://github.com/AISukoSukoFromTsukuba/MotionMentor" target="_blank">GitHub Repository</a>
+            </p>
+            </container>
     </section>
-    
+
 
     <section id="pre-projects" class="section">
         <h1>過去の取り組み</h1>
         <p>大学に編入する前は福井高専の電子情報工学科に在籍していました。<br>
-        そこでは情報学およびソフトウェア、ハードウェアについて幅広く学び、<br>
-        プログラミングの基礎を学びました。<br>
-        卒業研究では量子コンピュータについての研究をし、<br>
-        シミュレータの作成およびドイチェ-ジョサのアルゴリズムの<br>
-        検証を行いました。<br>
-        シミュレータ-> <a href="https://github.com/TKSN0775/graduate-research" target="_blank">GitHub</a></p>
+            そこでは情報学およびソフトウェア、ハードウェアについて幅広く学び、<br>
+            プログラミングの基礎を学びました。卒業研究では量子コンピュータについての研究をし、<br>
+            シミュレータの作成およびドイチェ-ジョサのアルゴリズムの検証を行いました。<br>
+            シミュレータ-> <a href="https://github.com/TKSN0775/graduate-research" target="_blank">GitHub</a></p>
     </section>
 
     <section id="skill" class="section">
         <h1>スキル・学習期間</h1>
         <ul>
-            <li>Python:     4年</li>
-            <li>C言語:      5年</li>
-            <li>HTML:       1年</li>
-            <li>CSS:        半年</li>
+            <li>Python: 3年</li>
+            <li>C言語: 4年</li>
+            <li>HTML: 1年</li>
+            <li>CSS: 半年</li>
             <li>JavaScript: 半年</li>
         </ul>
     </section>
@@ -78,10 +101,11 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <p>&copy; 2024 Takeshima</p>
     </footer>
 
     <script src="script.js"></script>
     <button id="backToTop" class="back-to-top">▲</button>
 </body>
+
 </html>

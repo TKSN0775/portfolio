@@ -8,6 +8,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -19,6 +20,7 @@ body {
     line-height: 1.6;
     background-color: #c09a83ac;
     color: #333;
+    align-items: center;
 }
 
 header {
@@ -53,9 +55,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #b58b31; /* ホバー時にリンクの色を変更 */
-    text-decoration: underline; /* ホバー時に下線を表示 */
-    transition: color 0.7s ease, text-decoration 0.7s ease; /* スムーズな変化 */
+    color: #b58b31;
+    /* ホバー時にリンクの色を変更 */
+    text-decoration: underline;
+    /* ホバー時に下線を表示 */
+    transition: color 0.7s ease, text-decoration 0.7s ease;
+    /* スムーズな変化 */
 }
 
 
@@ -66,8 +71,11 @@ nav ul li a:hover {
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* 初期状態の透明度 */
-    animation: fade-in 1.5s ease-in-out forwards; /* フェードインアニメーション */
+    opacity: 0;
+    /* 初期状態の透明度 */
+    animation: fade-in 1.5s ease-in-out forwards;
+    /* フェードインアニメーション */
+    justify-items: center;
 }
 
 
@@ -80,9 +88,15 @@ h1 {
     margin-bottom: 10px;
 }
 
-p, ul {
+p,
+ul {
     font-size: 1.2rem;
     margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 footer {
@@ -111,7 +125,8 @@ footer {
     border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
-    display: none; /* 最初は非表示 */
+    display: none;
+    /* 最初は非表示 */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -121,11 +136,40 @@ footer {
     background-color: #555;
 }
 
+.twitter-tweet {
+    margin: 0 auto;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*要素の間隔*/
+    gap: 20px;
+
+}
+
+.container p {
+    text-align: left;
+}
+
+.motionmentor {
+    width: 300px;
+}
 
 @media (max-width: 768px) {
     nav ul li {
         display: block;
         margin: 10px 0;
         text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    br {
+        display: none;
     }
 }
